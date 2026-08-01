@@ -1,17 +1,10 @@
-
-
-function Productcard( {title , image,price}) {
+function Productcard({ title, image, price }) {
   return (
-    <>
-    <div style={{border:" 1px solid black  ", width:" 250px"}}>
-        <img  height={250} width={250} src={image}alt=""></img>
-        <p>  {title}</p>
-        <p> {price}</p>
-    </div>
-    
-    
-    
-    </>
+    <article className="product-card">
+      <img src={image} alt={title}></img>
+      <h3 className="product-title">{title}</h3>
+      <p className="product-price">${price}</p>
+    </article>
   )
 }
 
