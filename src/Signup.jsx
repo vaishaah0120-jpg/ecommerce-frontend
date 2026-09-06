@@ -8,7 +8,7 @@ function Signup() {
 
   let senddetails = async (event) => {
     event.preventDefault()
-    let data = await fetch('http://localhost:3000/api/register', {
+    let data = await fetch('https://backend-ecomm-zawk.onrender.com/api/register', {
       method: 'POST',
       headers: {
         "content-type": "application/json"

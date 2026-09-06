@@ -3,9 +3,9 @@ import Productcard from "./Productcard";
 
 function Products({ serachquery }) {
   const [products, setproducts] = useState([])
-
+ttps://fakestoreapi.com
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
+    fetch('https://backend-ecomm-zawk.onrender.com/products')
       .then(response => response.json())
       .then(data => setproducts(data));
   }, [])
